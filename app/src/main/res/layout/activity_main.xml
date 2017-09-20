@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.test.vinay.calc.MainActivity" android:background="#c1cdc1"
+    tools:ignore="Overdraw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://schemas.android.com/tools ">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="60dp"
+        android:background="#87ceeb" android:id="@+id/linearLayout" android:orientation="vertical">
+
+    </LinearLayout>
+       <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CALCULATOR "
+        android:textStyle="bold" android:textSize="20sp" android:textAlignment="center"
+        android:layout_margin="15dp" android:id="@+id/tv1" tools:ignore="HardcodedText" />
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:gravity="bottom" android:background="#2f4f4f"
+
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true" android:layout_marginTop="20dp">
+
+        <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:height="60dp" android:hint="ENTER 1ST NUMBER HERE"
+            android:textColor="#e6e6fa"
+            android:textColorHint="#e6e6fa" android:textAlignment="center" android:id="@+id/et1"
+
+            tools:ignore="HardcodedText" />
+        <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:height="60dp" android:hint="ENTER 2ND NUMBER HERE" android:textAlignment="center"
+            android:textColorHint="#e6e6fa"
+            android:textColor="#e6e6fa"
+            android:id="@+id/et2" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="#e6e6fa"
+            android:height="60dp" android:hint="GET RESULTS HERE" android:textColorHint="#e6e6fa"
+            android:textSize="18sp" android:textAlignment="center" android:layout_gravity="bottom"
+            android:layout_marginTop="18dp" android:id="@+id/tv2" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:height="60dp" android:text="+" android:layout_weight="1" android:textStyle="normal"
+                android:textSize="50sp" android:id="@+id/b1"
+                android:background="#ff6347"  />
+
+            <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:height="60dp" android:text="-" android:layout_weight="1"
+                android:textStyle="normal" android:textSize="50sp" android:id="@+id/b2"
+                               android:background="#ff6347"
+                />
+
+            <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:height="60dp" android:text="/" android:layout_weight="1"
+                android:textStyle="normal" android:textSize="50sp" android:id="@+id/b3"
+                   android:background="#ff6347"
+               />
+
+            <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:height="60dp" android:text="*" android:layout_weight="1"
+                android:textStyle="normal" android:textSize="50sp" android:id="@+id/b4"
+                                         android:background="#ff6347"
+              />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
